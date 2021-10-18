@@ -1,0 +1,5 @@
+<div class="d-flex">
+  <button class="btn" (click)="toggleCardView.emit(true)" class="{'fw-bold': actualView }">Card View</button>
+  <button class="btn" (click)="toggleCardView.emit(false)" class="{ 'fw-bold': !actualView }">List View</button>
+  <button class="btn" (click)="showUserModal.emit()">+ New User</button>
+</div>

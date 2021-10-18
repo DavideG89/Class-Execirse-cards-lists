@@ -1,0 +1,9 @@
+.orders-modal {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: calc(50% - 300px);
+  left: calc(50% - 400px);
+  background-color: #fff;
+  z-index: 11;
+}

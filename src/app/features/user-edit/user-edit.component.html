@@ -1,0 +1,32 @@
+<div class="overlay" (click)="closeModal()"></div>
+<div class="user-modal p-3">
+  <h2>New User</h2>
+  <form [formGroup]="userForm">
+    <div class="w-100 d-flex flex-column">
+      <label>Name</label>
+      <input type="text" class="form-control" formControlName="name">
+    </div>
+
+    <div class="w-100 d-flex flex-column">
+      <label>Mail</label>
+      <input type="email" class="form-control" formControlName="mail">
+    </div>
+
+    <ng-container [formGroup]="location">
+      <div class="w-100 d-flex flex-column" >
+        <label>address</label>
+        <input type="text" class="form-control" formControlName="address">
+      </div>
+
+      <div class="w-100 d-flex flex-column" >
+        <label>city</label>
+        <input type="text" class="form-control" formControlName="city">
+      </div>
+    </ng-container>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button type="button" class="btn btn-danger px-4" (click)="closeModal()">Cancel</button>
+      <button type="button" class="btn btn-primary px-4" (click)="saveUser()">Save</button>
+    </div>
+  </form>
+</div>
